@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <title>GESTORIA DEL AUTOMOTOR</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <img src="./img/logo.jpg"
+                alt=" Imagen de un auto dibujado con lineas y escrito debajo gestoria automotor." class="headerimg">
+            <h1 class="headerh1">
+                GESTORIA DEL AUTOMOTOR
+            </h1>
+        </div>
+        <nav>
+            <ul class="headernav_list">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Quienes somos?</a></li>                
+                <li><a href="horario.html">Horarios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="info.html">Info a tener en cuenta</a></li> 
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--<img class="imagen_contacto" src="./img/auto_fondo.jpg" alt="auto de fondo">-->                   
+        <h2 class="titulo">
+            Contacto
+        </h2>
+        <br>
+        <div class="form_micontacto">
+            <form class="form" action="#" method="post">
+                <label>Nombre y Apellido</label> <input type="text">
+                <br><br>
+                <label>Teléfono</label> <input type="text">
+                <br><br>
+                <label>Correo electrónico</label> <input type="text">
+                <br><br>
+                <label>Tipo de trámite</label>
+                <select name="trámite" id="trámite">
+                    <option value="altmot">Alta de motor</option>
+                    <option value="bajaut">Baja del automotor</option>
+                    <option value="bajmot">Baja de motor</option>
+                    <option value="bajxrh">Baja por robo o hurto</option>
+                    <option value="camrad">Cambio de radicación</option>
+                    <option value="ceduaz">Cédula de autorizado/cédula azul</option>
+                    <option value="certdom">Certificado de dominio</option>
+                    <option value="certinf">Certificado de infracción</option>
+                    <option value="certpat">Certificado de patente</option>
+                    <option value="denpos">Denuncia de posesión y tenencia</option>
+                    <option value="denvta">Denuncia de venta</option>
+                    <option value="dupcaz">Duplicado de autorizado a conducir</option>
+                    <option value="dupced">Duplicado de cédula verde</option>
+                    <option value="dupch">Duplicado de chapas</option>
+                    <option value="dupti">Duplicado de título</option>
+                    <option value="insc0km">Inscripción 0km</option>
+                    <option value="otro">Otros</option>
+                    <option value="trans">Transferencia</option>
+                    <option value="turvp">Turno verificación policial</option>
+                </select>
+                <br><br>
+                <label>Consulta</label>
+                <br><br>
+                <textarea name="" id="" cols="65" rows="13"></textarea>
+                <br><br>
+                <!--botones de bootstrap se modifico el idioma-->
+                <input class="btn btn-primary" type="Enviar" value="Enviar">
+                <input class="btn btn-primary" type="Borrar" value="Borrar">
+            </form>
+            <br>
+            <aside class="micontacto">
+                <img src="./img/mail.jpg" alt="logo de e-mail" width="30"> gestoriadelautomotor@xxxx.com
+                <br><br>
+                <img src="./img/whatsapp.png" alt="logo de whatsapp" width="30"> xxxx-xxxx
+                <br><br>
+                <img src="./img/direccion.jpg" alt="logo de ubicacion" width="40"> xxxxxx
+            </aside>
+        </div>
+    
+    </main>
+    <br>
+    <footer class="footer">
+        <p>Página realizada por alumna</p>
+    </footer>
+    <script src="./js/bootstrap.js"></script>    
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <title>GESTORIA DEL AUTOMOTOR</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <img src="./img/logo.jpg"
+                alt=" Imagen de un auto dibujado con lineas y escrito debajo gestoria automotor." class="headerimg">
+            <h1 class="headerh1">
+                GESTORIA DEL AUTOMOTOR
+            </h1>
+        </div>
+        <nav>
+            <ul class="headernav_list">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Quienes somos?</a></li>                
+                <li><a href="horario.html">Horarios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="info.html">Info a tener en cuenta</a></li> 
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="titulo">
+            Horarios de atención
+        </h2>
+        <div class="tabla">
+            <table border="2">
+                <tr>
+                    <th class="dia">DIA</th>
+                    <th class="horario">HORARIO</th>
+                </tr>
+                <tr>
+                    <td class="lunes">Lunes</td>
+                    <td class="horario_lunes">8hs a 16hs</td>
+                </tr>
+                <tr>
+                    <td class="martes">Martes</td>
+                    <td class="horario_martes" rowspan="3">8hs a 12hs y 16hs a 20hs</td>
+                </tr>
+                <tr>
+                    <td class="miercoles">Miércoles</td>
+                </tr>
+                <tr>
+                    <td class="jueves">Jueves</td>
+                </tr>
+                <tr>
+                    <td class="viernes">Viernes</td>
+                    <td class="horario_viernes">8hs a 16hs</td>
+                </tr>
+                <tr>
+                    <td class="sabado">Sábado</td>
+                    <td class="horario_sabado" rowspan="2">Cerrado</td>
+                </tr>
+                <tr>
+                    <td class="domingo">Domingo</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Página realizada por alumna</p>
+    </footer>
+    <script src="./js/bootstrap.js"></script>    
+</body>
+
+</html>
