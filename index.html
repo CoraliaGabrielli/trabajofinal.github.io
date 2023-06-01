@@ -13,8 +13,8 @@
 <body>
     <header>
         <div class="header">
-            <img src="./img/logo.jpg"
-                alt=" Imagen de un auto dibujado con lineas y escrito debajo gestoria automotor." class="headerimg">
+            <img src="./img/logo.jpg" alt=" Imagen de un auto dibujado con lineas y escrito debajo gestoria automotor."
+                class="headerimg">
             <h1 class="headerh1">
                 GESTORIA DEL AUTOMOTOR
             </h1>
@@ -22,13 +22,12 @@
         <nav>
             <ul class="headernav_list">
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Quienes somos?</a></li>                
                 <li><a href="horario.html">Horarios</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="info.html">Info a tener en cuenta</a></li>                
+                <li><a href="info.html">Info a tener en cuenta</a></li>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    <button class="buscador" type="Buscar">Buscar</button>
                 </form>
             </ul>
         </nav>
@@ -44,16 +43,15 @@
         <br>
         <section class="index_img">
             <!--Imagenes-->
-            <img class="img1" src="./img/gestoria_del_automotor1.png" 
+            <img class="img1" src="./img/gestoria_del_automotor1.png"
                 alt="imagen de patente donde esta escrito argentina en celeste y con fondo negro y letras blanca dice gestoria-mandatario matriculado-todo tramite del automotor">
-            <img class="img2" src="./img/gestoria_del_automotor2.jpg" 
+            <img class="img2" src="./img/gestoria_del_automotor2.jpg"
                 alt="Imagen de un auto dibujado con lineas y escrito debajo los distintos tramites que se realizan">
-            <img class="img3" src="./img/auto_gestoria.jpg" 
+            <img class="img3" src="./img/auto_gestoria.jpg"
                 alt="imagen de acuerdo de manos, el lado izquierdo de un auto y unos papeles con lapicera">
-            <img class="img4" src="./img/gestoria1.jpg" 
+            <img class="img4" src="./img/gestoria1.jpg"
                 alt="Dibujo de una persona angustiada y dudando con signos de preguntas con un auto de fondo y varios carteles donde dicen VTV al dia, usados, garantia, patente al dia, etc">
-            <img class="img5" src="./img/formularios_gestoria.jpg" 
-                alt="foto de diferentes formularios">
+            <img class="img5" src="./img/formularios_gestoria.jpg" alt="foto de diferentes formularios">
         </section>
         <br><br>
         <section class="index_tram">
@@ -75,8 +73,52 @@
                 Transferencias -
                 Turnos Verificación Policial</p>
             <p>Trámites en general.</p>
+            <button onclick="ubicacion()" class="boton_ubicacion">Asesoramiento</button>
         </section>
         <br>
+        <section class="nosotros">
+            <!--sobre nosotros-->
+            <article class="video">
+                <iframe width="700" height="480" src="https://www.youtube.com/embed/ncNzIKCBNBU"
+                    title="Gestoria del Automotor" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </article>
+            <aside>
+                <h2 class="titulo_nosotros">Quienes somos?</h2>
+                <article class="tabla_nos">
+                    <table border="3">
+                        <tr>
+                            <th class="integrantes" colspan="3">Integrantes</th>
+                        </tr>
+                        <tr class="gestor">
+                            <td class="img_gestor"><img src="./img/gestor.jpg" alt="foto del gestor" width="80"
+                                    height="80"></td>
+                            <td class="nombre">
+                                <h4>Juan Rodriguez</h4>
+                                <p class="tarea">Mandatario del automotor. Matrícula Nacional.</p>
+                            </td>
+                        </tr>
+                        <tr class="programador">
+                            <td class="img_programador"><img src="./img/programador.jpg" alt="foto de la programadora"
+                                    width="80" height="80"></td>
+                            <td class="nombre">
+                                <h4>Coralia Gabrielli</h4>
+                                <p class="tarea">Programadora de páginas web.</p>
+                            </td>
+                        </tr>
+                        <tr class="diseñador">
+                            <td class="img_diseñador"><img src="./img/diseñador.jpg" alt="foto de la diseñadora"
+                                    width="80" height="80"></td>
+                            <td class="nombre">
+                                <h4>Ana Gonzalez</h4>
+                                <p class="tarea">Diseñadora.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </article>
+            </aside>
+        </section>
         <h2 class="fin">¡No dudes en consultarnos!</h2>
     </main>
     <br>

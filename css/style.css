@@ -48,6 +48,16 @@ header {
     text-decoration: none;
 }
 
+/*barra de navegación de bootstrap, modificación del boton*/
+.buscador {
+    border-radius: 5px;
+    background-color: rgb(61, 60, 60);
+    color: white;
+    padding: 1%;
+    width: 150px;
+}
+
+/*BODY*/
 body{
     display: flex;
     flex-direction: column;
@@ -61,7 +71,7 @@ main {
     padding: 2%;
 }
 
-.titulo{
+.titulo, .titulo_nosotros{
     color: cornflowerblue;
     font-size: 30px;
     padding-bottom: 2%;
@@ -70,32 +80,45 @@ main {
     font-weight: bold;
 }
 
+.fin {
+    font-size: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;    
+}
 
-/*INDEX MAIN*/
+/*INDEX*/
 .index_intro {    
     font-size:20px;    
     color: rgb(92, 91, 91);
     border-style: groove;
     border-color: cornflowerblue;
     padding: 2% 4% 2% 5%;
-    margin-top: 3%;
+    margin-top: 1%;
     margin-bottom: 3%;
 }
 
-.index_img {    
+.index_img {        
     display: grid;
     grid-template-columns: repeat(3, 1fr);  
     grid-template-rows: repeat(2, 1fr);
-    gap: 20px;
+    gap:20px;
     justify-content: center;
-    align-items: center;   
+    align-items: center;      
 }
 
 .img2 {
+    width: 300px;
+    height: 350px;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;    
+}
+
+.img1, .img3, .img4, .img5 {
+    width: 350px;
+    height: 200px;
 }
 
 .index_tram {
@@ -109,74 +132,57 @@ main {
     margin-bottom: 3%;
 }
 
-.fin {
-    font-size: 30px;
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 50px;    
+.boton_ubicacion {    
+    background-color: rgb(61, 60, 60);
+    color: white;
+    padding: 1%;      
+    border-radius: 5px;       
 }
 
-/*NOSOTROS MAIN*/
+.nosotros {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px 20px;
+}
+
 .video {
     text-align: center;
 }
 
 .tabla_nos {
+    margin: 5px;
+    padding: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: center;    
 }
 
 .integrantes {
     text-align: center;   
-    padding: 2%;
+    padding: 5px;
     font-size: 20px;
     color: white;
     background-image: linear-gradient(105deg, rgba(51,56,57,1) 36%, rgb(100, 149, 237) 99%);    
 }
 
-.gestor, .programador, .diseñador { 
-    height: 100px;
+.gestor, .programador, .diseñador {     
     border: 2px solid black;   
 }
 
 .img_gestor, .img_programador, .img_diseñador, .nombre, .tarea {
-    padding: 10px;    
+    padding: 5px;    
     text-align: center;
 }
 
-/*INFO MAIN*/
-.transferencia, .denuncia_venta, .prenda, .st08, .st, .cat {
-    background-color: cornflowerblue;        
-    padding: 20px 40px 20px 40px;
-    border: 2px solid black;   
+.nombre {    
+    font-size: large;
 }
 
-.informe_dominio, .denuncia_posesion, .certificado_dominio, .st02 {
-    background-color: rgb(92, 91, 91);    
-    padding: 20px 40px 20px 40px; 
-    color: white;
-    border: 2px solid black;   
-}
-
-.info_tram {
-    display: grid;    
-    grid-template-rows:repeat(4, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5px 5px;
-}
-
-.info_tram h3 {
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-.cat {
-    grid-column-start: 2;
-    grid-column-end: 3;
+.tarea {   
+    font-size:medium;
 }
 
 /*PLANILLA HORARIOS*/
-.tabla {
+.tablahorario {
     display:flex;    
     justify-content:center;
     align-items: center;
@@ -228,37 +234,70 @@ main {
 .imagen_contacto {
     background-image: url("../img/auto_fondo.jpg");
     background-position:center;
-    background-repeat: no-repeat;
-    background-size:cover;
+    background-repeat:no-repeat;
+    background-size: cover;   
 }
+
 .form_micontacto {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     font-weight:bold;
-    color: cornflowerblue;
+    color: white;
 }
 
 .form {    
     font-size: 15px;
-    border-color: cornflowerblue;    
+    border-color: white;    
     border-style: double;
     padding: 3%;
     width: fit-content;    
 }
 
 .micontacto {    
-    font-size: 20px;
-    border-color: cornflowerblue;
-    color: cornflowerblue;
+    font-size: 15px;
+    border-color: white;
+    color: white;
     border-style: double;
     padding: 2%;
     width: fit-content;    
 }
 
 .whatsapp {
+    color: white;
     text-decoration: none;
+}
+
+/*INFO*/
+.transferencia, .denuncia_venta, .prenda, .st08, .st, .cat {
+    background-color: cornflowerblue;        
+    padding: 20px 40px 20px 40px;
+    border: 2px solid black;   
+}
+
+.informe_dominio, .denuncia_posesion, .certificado_dominio, .st02 {
+    background-color: rgb(92, 91, 91);    
+    padding: 20px 40px 20px 40px; 
+    color: white;
+    border: 2px solid black;   
+}
+
+.info_tram {
+    display: grid;    
+    grid-template-rows:repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px 5px;
+}
+
+.info_tram h3 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.cat {
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 
 /*FOOTER*/
@@ -278,4 +317,40 @@ main {
     text-decoration: none;
 }
 
+@media (max-width:768px) {
+    .footer, .terminos {
+        background-image: linear-gradient(105deg, rgba(51,56,57,1) 36%, rgb(100, 149, 237) 99%);
+        color: white;   
+    }
+   
+    .index_img {
+        background-image: linear-gradient(105deg, rgba(51,56,57,1) 36%, rgb(100, 149, 237) 99%);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 5px;
+    }
+    
+    body, main, footer {
+        width: fit-content;
+        align-items: center;
+    }
+
+    .form {
+        display: none;
+    }
+
+    .nosotros {
+        display: grid;
+        grid-template-columns: 1fr;        
+    }
+    
+    .video {
+        text-align: center;
+    }
+
+    .tabla_nos, .titulo_nosotros {
+        display: none;
+    }    
+}
 
